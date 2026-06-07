@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 import time
 
 # 1. Setup koneksi 
-db_uri = 'postgresql+psycopg2://postgres:root@localhost:5433/home_credit_risk'
+db_uri = 'postgresql+psycopg2://postgres:YOUR_PASSWORD@localhost:5433/home_credit_risk'
 engine = create_engine(db_uri)
 
 # 2. Target file kedua
