@@ -147,7 +147,7 @@ ROC-AUC 0.7633 berada dalam benchmark kompetisi Kaggle Home Credit (0.745–0.78
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/username/home-credit-default-risk.git
+git clone https://github.com/rdityaza/credit-risk-analytics.git
 cd home-credit-default-risk
 ```
 
