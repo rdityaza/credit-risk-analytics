@@ -6,6 +6,7 @@
 ![ROC--AUC](https://img.shields.io/badge/ROC--AUC-0.7633-success)
 ![Status](https://img.shields.io/badge/Status-Phase%203%20Complete-blue)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+[![Tableau](https://img.shields.io/badge/Dashboard-Tableau%20Public-E97627?logo=tableau)](https://public.tableau.com/app/profile/raditya.zaki.athaya/viz/CreditRiskNPLAssessmentDashboard/Dashboard1?publish=yes)
 
 Proyek portfolio end-to-end di domain **Fintech / Digital Banking** yang membangun
 sistem prediksi risiko kredit dan penilaian Non-Performing Loan (NPL) menggunakan
@@ -137,6 +138,25 @@ ROC-AUC 0.7633 berada dalam benchmark kompetisi Kaggle Home Credit (0.745–0.78
 | 5 | `annuity_income_ratio` | Rasio cicilan terhadap pendapatan |
 
 ---
+## 📊 Live Dashboard
+Hasil prediksi *Machine Learning* dan analisis profil risiko diwujudkan dalam sebuah *Executive Dashboard* interaktif untuk memudahkan *stakeholder* mengambil keputusan.
+
+👉 **[View Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/raditya.zaki.athaya/viz/CreditRiskNPLAssessmentDashboard/Dashboard1?publish=yes)**
+
+![Dashboard Preview](assets/dashboard_preview.png)
+
+Dashboard mencakup:
+- KPI summary (total applicants, default rate, high-risk count)
+- Risk segment distribution dan score distribution
+- Default rate breakdown by age, income tier, dan gender
+- Top 10 feature importance dari LightGBM
+- Interaktif: klik segmen manapun untuk filter semua chart
+
+**Key Business Insights:**
+1. **Demografi Rentan:** Laki-laki dengan pendapatan menengah ke bawah (< 180k) merupakan segmen dengan *Default Rate* tertinggi. Sebaliknya, perempuan dengan pendapatan tinggi (> 360k) adalah segmen paling aman.
+2. **Korelasi Usia:** Terdapat tren penurunan risiko seiring bertambahnya usia, di mana kelompok usia < 25 tahun memiliki rasio kredit macet tertinggi.
+3. **Riwayat Penolakan:** Nasabah dengan rekam jejak penolakan kredit lebih dari 50% di masa lalu memiliki tendensi jauh lebih besar untuk kembali gagal bayar di masa kini.
+---
 
 ## 🚀 Quick Start
 
@@ -195,7 +215,7 @@ Jalankan semua cell dari atas ke bawah secara berurutan.
 - [x] Phase 1 — Data Engineering (CSV → PostgreSQL)
 - [x] Phase 2 — Advanced SQL & Master View
 - [x] Phase 3 — Predictive Analytics (LightGBM + SHAP)
-- [ ] Phase 4 — Tableau Dashboard (NPL Monitoring)
+- [x] Phase 4 — Tableau Dashboard (NPL Monitoring)
 
 ---
 
