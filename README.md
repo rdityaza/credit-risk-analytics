@@ -33,6 +33,9 @@ industri keuangan.
 ## 📁 Project Structure
 ```
 home-credit-default-risk/
+|
+├── assets/
+│   └── dashboard_preview.png
 │
 ├── data/                          # Output artifacts (tidak di-push ke GitHub)
 │   ├── application_train.csv      # Raw data (tidak di-push ke GitHub)
